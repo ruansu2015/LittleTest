@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="Listener"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D9D9D9"
+        tools:context=".fragment.EditFragment">
+
+        <com.ruansu.littletest.view.TitleContentView
+            android:id="@+id/receiver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:hint="@string/input_name"
+            app:layout_constraintTop_toTopOf="parent"
+            app:title="@string/receiver" />
+
+        <com.ruansu.littletest.view.TitleContentView
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            app:hint="@string/input_phone_number"
+            app:isPhone="true"
+            app:layout_constraintTop_toBottomOf="@id/receiver"
+            app:title="@string/phone" />
+
+        <com.ruansu.littletest.view.TitleContentView
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:onClick="@{Listener}"
+            app:enabled="false"
+            app:hint="@string/input_area"
+            app:layout_constraintTop_toBottomOf="@id/phone"
+            app:title="@string/area" />
+
+        <com.ruansu.littletest.view.TitleContentView
+            android:id="@+id/street"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            app:hint="@string/street_info"
+            app:layout_constraintTop_toBottomOf="@id/address"
+            app:title="@string/address_detail" />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:background="#070707"
+            android:onClick="@{Listener}"
+            android:text="@string/save"
+            android:textColor="@android:color/white"
+            app:layout_constraintTop_toBottomOf="@id/street" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

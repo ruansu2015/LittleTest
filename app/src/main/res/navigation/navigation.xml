@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.ruansu.littletest.fragment.MainFragment"
+        android:label="main"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_main_to_detail"
+            app:destination="@id/detailFragment"
+            app:enterAnim="@anim/right_in"
+            app:exitAnim="@anim/left_out"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/left_in"
+            app:popExitAnim="@anim/right_out"
+            app:popUpTo="@id/mainFragment" />
+        <action
+            android:id="@+id/action_main_to_address"
+            app:destination="@id/addressFragment"
+            app:enterAnim="@anim/right_in"
+            app:exitAnim="@anim/left_out"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/left_in"
+            app:popExitAnim="@anim/right_out"
+            app:popUpTo="@id/mainFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.ruansu.littletest.fragment.DetailFragment"
+        android:label="detail"
+        tools:layout="@layout/fragment_detail">
+        <action
+            android:id="@+id/action_detail_to_choose"
+            app:destination="@id/chooseFragment"
+            app:enterAnim="@anim/popup_window_in_animation"
+            app:launchSingleTop="true"
+            app:popExitAnim="@anim/popup_window_out_animation"
+            app:popUpTo="@id/detailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/chooseFragment"
+        android:name="com.ruansu.littletest.fragment.ChooseFragment"
+        android:label="choose"
+        tools:layout="@layout/fragment_choose" />
+
+    <fragment
+        android:id="@+id/addressFragment"
+        android:name="com.ruansu.littletest.fragment.AddressFragment"
+        android:label="address"
+        tools:layout="@layout/fragment_address">
+        <action
+            android:id="@+id/action_address_to_edit"
+            app:destination="@id/editFragment"
+            app:enterAnim="@anim/right_in"
+            app:exitAnim="@anim/left_out"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/left_in"
+            app:popExitAnim="@anim/right_out"
+            app:popUpTo="@id/addressFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/editFragment"
+        android:name="com.ruansu.littletest.fragment.EditFragment"
+        android:label="edit"
+        tools:layout="@layout/fragment_edit" />
+
+</navigation>

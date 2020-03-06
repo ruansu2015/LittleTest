@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">LittleTest</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="detail">商品详情页和颜色尺码选择模块</string>
+    <string name="address">收货地址页面CURD</string>
+    <string name="home_page">首页</string>
+    <string name="customer_service">客服</string>
+    <string name="buy_now">立即购买</string>
+    <string name="add_to_shopping_car">添加至购物车</string>
+    <string name="shopping_car">购物车</string>
+    <string name="choose_detail">请选择配送方式，颜色，尺码，数量</string>
+    <string name="rmb">&#165;</string>
+    <string name="market_price">初上市价格：&#165;</string>
+    <string name="details">详情</string>
+    <string name="comment">评论</string>
+    <string name="choose_color_size">请选择颜色和尺码</string>
+    <string name="color">颜色：</string>
+    <string name="size">尺码：</string>
+    <string name="buy_count">购买数量</string>
+    <string name="one">1</string>
+    <string name="create_address">&#043;新增收货地址</string>
+    <string name="default_address">默认地址</string>
+    <string name="receiver">收货人</string>
+    <string name="input_name">输入姓名</string>
+    <string name="phone">手机号码</string>
+    <string name="input_phone_number">联系人手机号码</string>
+    <string name="area">所在地区</string>
+    <string name="input_area">地区信息</string>
+    <string name="address_detail">详细地址</string>
+    <string name="street_info">街道门牌信息</string>
+    <string name="save">保存</string>
+    <string name="edit">编辑</string>
+    <string name="delete">删除</string>
+</resources>
